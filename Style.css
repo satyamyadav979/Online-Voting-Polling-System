@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #5f6368;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+input[type="text"], button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+#add-option {
+    background-color: #34a853;
+}
+
+#add-option:hover {
+    background-color: #2d8e47;
+}
+
+.poll {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poll-header {
+    margin-bottom: 15px;
+}
+
+.poll-header h3 {
+    margin: 0;
+    padding-right: 30px;
+    color: #1a73e8; /* This changes the question color to blue */
+}
+
+.delete-poll {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ea4335;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.delete-poll:hover {
+    background-color: #d33828;
+}
+
+.poll ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.poll li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.poll li button {
+    flex-grow: 1;
+    text-align: left;
+    background-color: #f1f3f4;
+    color: #333;
+    border: 1px solid #dadce0;
+    padding: 10px 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.poll li button:hover {
+    background-color: #e8eaed;
+}
+
+.poll li button:disabled {
+    background-color: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.poll li button:disabled:hover {
+    background-color: #e0e0e0;
+}
+
+.vote-count {
+    font-weight: bold;
+    color: #5f6368;
+    min-width: 80px;
+    text-align: right;
+}
+
+
+@media (max-width: 600px) {
+    #app {
+        padding: 10px;
+    }
+    
+    input[type="text"], button {
+        font-size: 14px;
+    }
+}
